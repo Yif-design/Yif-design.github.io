@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<!--
+    Weiqi Feng's personal website!
+    Name:   Weiqi Feng
+    Email:  fengweiqi@sjtu.edu.cn
+    Date:   Mar 15, 2020
+-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weiqi Feng</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <table id="main-table">
+        <tr>
+            <td>
+                <table class="sub-table" >
+                    <tr>
+                        <td class="td-with-padding">
+                            <p class="p-center" id="name">
+                                <name>Weiqi Feng</name>
+                            </p>
+                            <p class="p-center" id="email">
+                                fengweiqi@sjtu.edu.cn
+                            </p>
+                            <p>
+
+                                I'm currently a junior student in Computer Science Department in <a
+                                    href="http://en.sjtu.edu.cn/">Shanghai Jiao Tong University</a>.
+                                I am working as a research assistant at <a href="http://202.120.38.37/sail/"> SAIL</a>,
+                                working with Professor <a href="http://www.cs.sjtu.edu.cn/~lichao/">Chao Li</a>.
+                            </p>
+                            <p>
+                                My Research Interests lie in the broad area of <span class="emphasis">Computer Systems</span> and <span class="emphasis">Computer Architecture</span>.
+                                Currently, I am working on research projects on Serverless Computing.
+                            </p>
+                            <p class="p-center">
+                                <a href="./cv.pdf">Curriculum Vitae</a>
+                                &nbsp|&nbsp;
+                                <a href="mailto:fengweiqi@sjtu.edu.cn">Email</a>
+                                &nbsp;|&nbsp;
+                                <a href="https://github.com/vic0428/">GitHub</a>
+                                &nbsp;|&nbsp;
+                                <a href="https://www.zhihu.com/people/feng-wei-qi-21">Zhihu</a>
+                            </p>
+                        </td>
+                        <td class="td-with-padding">
+                            <img src="images/weiqi.jpeg" id="Weiqi-image">
+                        </td>
+                    </tr>
+                </table>
+                <table class="sub-table">
+                    <tr>
+                        <td class="td-with-padding">
+                            <heading>Education</heading>
+                            <ul>
+                                <li>
+                                   <span class="emphasis">Shanghai Jiao Tong University</span>, Shanghai, China
+                                       <span class="align-right">Sep 2017 - Jun 2021 </span>
+                                    <p>Major in Computer Science and Engineering (GPA: xx/4.3, Rank: xx/150)</p>
+                                </li>
+                                <li>
+                                    <span class="emphasis">Zhiyuan Honor College</span>, Shanghai Jiao Tong University, Shanghai,
+                                    China<span class="align-right">Sep 2017 - Jun 2021 </span>
+                                    <p>Major in Zhiyuan Honors Program of Engineering (Top xx%) </p> 
+                                </li>
+                                <li>
+                                    <span class="emphasis">University of Washington</span>, Seattle, USA<span
+                                    class="align-right">July 2018 - Aug 2018 </span>
+                                    <p>Attend Global Electronic Engineering Program </p> 
+                                </li>
+                            </ol>
+
+
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="td-with-padding">
+                            <heading>Research Experience</heading>
+
+                            <p>Current research interests: Network Systems and Cloud Computing.</p>
+                            <p><span class="emphasis">Sustainable Architectures and Infrastructure Laboratory</span>, SJTU <span
+                                    class="align-right">July 2019 - Present</span> <br>
+                                Research Assistant, supervised by Professor <a href="http://www.cs.sjtu.edu.cn/~lichao/"">Chao Li</a></p>
+                            <ul>
+                                <li>Serverless Compuring For Edge Intelligence
+                                    <p>
+                                        We proposed a platform which deploys <span class="emphasis">network functions</span> and <span class="emphasis">edge data
+                                        processing functions</span> in the same infrastructure
+                                        using serverless computing model. And the platform is implemented based on
+                                        <a href="http://openwhisk.apache.org/" style="font-size: 13px;">Apache
+                                            OpenWhisk</a>.
+                                    </p>
+
+                                </li>
+                            </ol>
+
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="td-with-padding">
+                            <heading>Selected Projects</heading>
+                            <ol>
+                                <li>
+                                    JOS Operating System [<a href="https://github.com/Vic0428/Vic-Jos">Code</a>]
+                                    <p>
+                                        Based on skeleton code provided by <a
+                                        href="https://pdos.csail.mit.edu/6.828/2018/schedule.html">MIT 6.828</a>, I
+                                        implemented major parts of JOS in an exokernel style. It consists of booting, memory
+                                        management, user-level environments, premptive multitasking, file systems and network
+                                        driver.
+                                        Also I have read the major source code of <a
+                                        href="https://en.wikipedia.org/wiki/Xv6">xv6</a> through the process.
+                                    </p>
+                                </li>
+                                <li>
+                                    Android Memory Managemnt [<a
+                                    href="https://github.com/Vic0428/Android-Memory-Management">Code</a>]
+                                    <p>
+                                        In the first part, I wrote new system calls to map a target process's page table into
+                                        the current process's address space. Based on that, I implemented
+                                        <code>VATranslate</code> to get physical address of given virtual address.
+                                        <br>
+                                        In the second part, I modified the <span class="emphasis">Linux Page Replacement Algorithm</span> by adding new
+                                        variables reflecting page importance.
+                                    </p>
+                                </li>
+                                <li>
+                                    Distributed Algorithms [<a>Code</a>]
+                                    <p>
+                                        Based on skeleton code provided by <a href="https://www.cs.princeton.edu/courses/archive/fall19/cos418/schedule.html">Princeton COS418</a> and <a href="https://courses.cs.washington.edu/courses/cse452/19sp/calendar/calendar.html"> UW CSE452</a>, I implemented some common distributed algorithms and protocols using 
+                                        <a href="https://golang.org/">Go</a>.
+                                        <br>
+                                        <ul>
+                                            <li>
+                                                A simplified distributed version of MapReduce
+                                            </li>
+                                            <li>
+                                                Chandy Lamport Snapshots
+                                            </li>
+                                            <li>
+                                                Raft Algorithm
+                                            </li>
+                                            <li>
+                                                Paxos Algorithm
+                                            </li>
+                                        </ul>
+                                    </p>
+                                </li>
+                                <li>
+                                    NEMU [<a href="">Code</a>] 
+                                    <p>
+                                        NEMU provides simulated hardware resources to run user program. Based on skeleton code
+                                        provided by <a href="https://github.com/NJU-ProjectN/ics-pa.git">NJU-ICS</a>, I
+                                        implemented major parts of NEMU in x86 version. <br>
+                                        It mainly includes a small debugger like gdb and some other parts. This project is still
+                                        in progress
+                                    </p>
+                                </li>
+                            </ol>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td-with-padding">
+                            <heading>Awards & Scholarships</heading>
+                            <ol>
+                                <li class="li-margin">
+                                    RongChang Scholarship (CN ¥30000, Top1%) <span class="align-right">2019</span> 
+                                </li>
+                                <li class="li-margin">
+                                    Zhiyuan College Honors Scholarship (CN ¥5000, Top5%) <span class="align-right">2017 & 2018 & 2019</span> 
+                                </li>
+                                <li class="li-margin">
+                                    National Scholarship (CN ¥8000, Top 1%) <span class="align-right">2017</span> 
+                                </li>
+                                <li class="li-margin">
+                                    Zhiyuan College Excellent Scholarship (Class A, CN ¥1000, Top 5%) <span class="align-right">2017 & 2018</span> 
+                                </li>
+                                <li class="li-margin">
+                                    Meritorious Winner, MCM/ICM (Problem A) <span class="align-right">2017 &
+                                        2018</span> 
+                                </li>
+                            </ol>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td-with-padding">
+                            <heading>Teaching Experience</heading>
+                            <ol>
+                                <li class="li-margin">
+                                    CS154: Data Structure (Honor) <span class="align-right">2020
+                                        Spring</span> 
+                                    <br>
+                                    Teaching Assistant at Shanghai Jiao Tong University
+                                </li>
+                                <li class="li-margin">
+                                    CS359: Computer Architecture <span class="align-right">2019 Fall</span> 
+                                    <br>
+                                    Mooc Teaching Assistant at Shanghai Jiao Tong University
+                                </li>
+                            </ol>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td-with-padding">
+                            <heading>Miscellaneous</heading>
+                            <p>
+                                I'm an amateur in cooking / running / traveling.
+                            </p>
+                        </td>
+                    </tr>
+
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
